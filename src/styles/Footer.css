@@ -15,6 +15,7 @@
     text-align: center;
 
     img {
+        width: 100%;
         max-width: 150px;
     }
 }
@@ -41,11 +42,14 @@
 
                 &:hover {
                     color: hsl(50, 91%, 52%);
-                    border-bottom: 5px solid hsl(50, 91%, 52%);
                 }
             }
         }
     }
+}
+
+.logo-toggle {
+    cursor: pointer;
 }
 
 .social-links {
@@ -66,4 +70,29 @@
 .footer-bottom {
     text-align: center;
     margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .footer-logo {
+        grid-column: span 2;
+    }
+
+    .logo-toggle {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        grid-column: span 1;
+    }
 }

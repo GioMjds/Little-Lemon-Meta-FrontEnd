@@ -1,6 +1,7 @@
 import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Reservation from "./pages/BookingPage";
@@ -10,11 +11,16 @@ import Confirmation from "./pages/Confirmation";
 import Menu from "./pages/Menu";
 
 function App() {
+  const [switchLogo, setSwitchLogo] = useState(false);
+
+  const toggleLogo = () => {
+    setSwitchLogo(!switchLogo);
+  }
 
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <NavBar switchLogo={switchLogo} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +30,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
-        <Footer />
+        <Footer toggleLogo={toggleLogo} />
       </BrowserRouter>
     </>
   )

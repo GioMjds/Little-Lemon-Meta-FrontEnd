@@ -1,13 +1,15 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
-import Logo from '../assets/little-lemon/Asset20@4x.png'
-import '../styles/NavBar.css'
+import Logo1 from '../assets/little-lemon/Asset16@4x.png'
+import Logo2 from '../assets/little-lemon/Asset14@4x.png'
+import '../styles/navbar.css'
 
-const NavBar = () => {
+const NavBar = ({ switchLogo }) => {
   return (
     <nav className='navbar'>
       <div className="navbar-container">
         <Link to='/' className='navbar-logo'>
-          <img src={Logo} alt='Little Lemon Logo' />
+          <img src={switchLogo ? Logo1 : Logo2} alt='Little Lemon Logo' />
         </Link>
         <ul className='nav-menu'>
           <li className="nav-item">

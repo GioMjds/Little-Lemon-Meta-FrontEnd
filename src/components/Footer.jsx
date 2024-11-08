@@ -1,13 +1,24 @@
-import '../styles/Footer.css';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
+import '../styles/footer.css';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/little-lemon/Asset20@4x.png';
+import Logo1 from '../assets/little-lemon/Asset9@4x.png';
+import Logo2 from '../assets/little-lemon/Asset20@4x.png';
 
-const Footer = () => {
+const Footer = ({ toggleLogo }) => {
+    const [text, setText] = useState('uwu? >-<');
+    const [logo, setLogo] = useState(toggleLogo);
+
+    const handleClick = () => {
+        setLogo(!logo);
+        setText(text === 'uwu? >-<' ? 'more uwu?' : 'uwu?');
+        toggleLogo();
+    }
     return (
         <footer className='footer'>
             <div className="footer-content">
                 <div className="footer-logo">
-                    <img src={Logo} alt="Little Lemon Logo" />
+                    <img src={logo ? Logo1 : Logo2} alt="Little Lemon Logo" />
                 </div>
                 <nav className="footer-nav">
                     <h3>Navigation</h3>
@@ -15,8 +26,16 @@ const Footer = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/menu">Menu</Link></li>
                         <li><Link to="/reservations">Reservations</Link></li>
-                        <li><Link to="/order-online">Order Online</Link></li>
+                        <li><Link to="/order">Order Online</Link></li>
                         <li><Link to="/login">Login</Link></li>
+                        <li>
+                            <span 
+                                onClick={handleClick} 
+                                className={`logo-toggle ${logo ? 'active' : ''}`}
+                            >
+                                {text}
+                            </span>
+                        </li>
                     </ul>
                 </nav>
                 <div className="footer-contact">
