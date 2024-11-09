@@ -10,7 +10,7 @@ const Header = () => {
                 <h2>Welcome to Little Lemon</h2>
                 <h3>Manila, Philippines</h3>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
-                <Link to="/reservations"><button>Reserve a table</button></Link>
+                <Link to="/menu" className="menu-link">View Menu</Link>
             </div>
 
             <div className="banner-image">

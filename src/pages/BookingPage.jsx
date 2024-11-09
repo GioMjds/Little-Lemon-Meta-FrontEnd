@@ -61,7 +61,7 @@ const BookingPage = () => {
                 name="guests" 
                 id="book-guests"
                 value={formData.guests}
-                required min="1" max="10"
+                required min="1" max="20"
                 onChange={handleChange}
               />
             </div>
@@ -74,7 +74,7 @@ const BookingPage = () => {
                 value={formData.occasion}
                 onChange={handleChange}
               >
-                <option value="">Select an Occasion</option>
+                <option value="" disabled>Select an occasion...</option>
                 <option value="birthday">Birthday</option>
                 <option value="anniversary">Anniversary</option>
                 <option value="date">Date</option>

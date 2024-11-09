@@ -1,12 +1,12 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react"
 import '../styles/login.css';
 import { useNavigate } from "react-router-dom";
 
-const Register = ({ setIsLoggedIn }) => {
+const Register = () => {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        username: '',
         email: '',
         mobileNumber: '',
         password: '',
@@ -26,12 +26,12 @@ const Register = ({ setIsLoggedIn }) => {
     const handleRegister = e => {
         e.preventDefault();
 
-        const { firstName, lastName, email, mobileNumber, password, confirmPassword } = formData;
+        const { firstName, lastName, username, email, mobileNumber, password, confirmPassword } = formData;
 
-        if (firstName && lastName && email && mobileNumber && password && confirmPassword) {
+        if (firstName && lastName && username && email && mobileNumber && password && confirmPassword) {
             if (password === confirmPassword) {
                 alert('Registration successful');
-                setIsLoggedIn(true);
+                navigate('/login');
             } else alert('Passwords do not match. Please try again');
         } else alert('Please fill all fields.');
     };
@@ -61,6 +61,18 @@ const Register = ({ setIsLoggedIn }) => {
                         id="lastName"
                         name="lastName"
                         value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="username">Username:</label>
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        value={formData.username}
                         onChange={handleChange}
                         required
                     />

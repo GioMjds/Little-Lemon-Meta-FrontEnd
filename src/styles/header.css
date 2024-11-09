@@ -21,6 +21,7 @@
     height: 100vh;
 
     h2 {
+        font-size: 4rem;
         margin-bottom: 0.5rem;
     }
 
@@ -44,6 +45,25 @@
         width: 100%;
         border-radius: 14px;
         object-fit: cover;
+    }
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 1rem 1rem;
+    width: 25%;
+    background-color: hsl(50, 91%, 52%);
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsla(50, 91%, 52%, 0.8);
     }
 }
 

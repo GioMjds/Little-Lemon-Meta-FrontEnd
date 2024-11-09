@@ -85,6 +85,10 @@
         width: 100%;
     }
 
+    .social-links {
+        justify-content: center;
+    }
+
     .logo-toggle {
         font-size: 1.1rem;
     }

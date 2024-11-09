@@ -32,7 +32,7 @@ function App() {
           <Route path="/reservations" element={isLoggedIn ? <Reservation /> : <Navigate to="/login" /> } />
           <Route path="/order" element={isLoggedIn ? <Order /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/register" element={<RegisterPage setIsLoggedIn={setIsLoggedIn}/>} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
         <Footer toggleLogo={toggleLogo} />
