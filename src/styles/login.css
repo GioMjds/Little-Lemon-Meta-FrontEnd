@@ -1,0 +1,48 @@
+.login-container {
+    max-width: 500px;
+    margin: 4rem auto;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: hsl(160, 13%, 33%);
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 5px;
+        background-color: hsl(0, 0%, 100%);
+        font-size: 1rem;
+    }
+}
+
+.toggle-link {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    
+    &:hover {
+        color: hsl(160, 13%, 33%);
+        text-decoration: underline;
+    }
+}

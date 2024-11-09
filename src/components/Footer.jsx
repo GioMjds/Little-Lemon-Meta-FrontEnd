@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import '../styles/footer.css';
 import { Link } from 'react-router-dom';
-import Logo1 from '../assets/little-lemon/Asset9@4x.png';
 import Logo2 from '../assets/little-lemon/Asset20@4x.png';
+import Logo1 from '../assets/little-lemon/Asset9@4x.png';
+import '../styles/footer.css';
 
 const Footer = ({ toggleLogo }) => {
     const [text, setText] = useState('uwu? >-<');
@@ -29,8 +29,8 @@ const Footer = ({ toggleLogo }) => {
                         <li><Link to="/order">Order Online</Link></li>
                         <li><Link to="/login">Login</Link></li>
                         <li>
-                            <span 
-                                onClick={handleClick} 
+                            <span
+                                onClick={handleClick}
                                 className={`logo-toggle ${logo ? 'active' : ''}`}
                             >
                                 {text}

@@ -1,0 +1,50 @@
+.booking-page-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1); 
+}
+
+.booking-section h1 {
+    text-align: center;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: hsl(160, 13%, 33%);
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(50, 91%, 52%);
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+
+    &:hover {
+        background-color: hsl(50, 91%, 42%);
+    }
+}

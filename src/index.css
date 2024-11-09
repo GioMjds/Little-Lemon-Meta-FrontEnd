@@ -5,12 +5,56 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: hsla(0, 0%, 100%, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: hsl(50, 91%, 52%);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: hsl(50, 91%, 45%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    color: hsl(50, 91%, 52%);
+    font-size: 40px;
+}
+
 h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 0.6rem;
+}
+
+button {
+    background-color: hsl(50, 91%, 52%);
+    color: hsl(0, 0%, 0%);
+    padding: 1rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(50, 91%, 42%);
+    }
 }
