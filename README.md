@@ -1,8 +1,24 @@
-# React + Vite
+# Little Lemon Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+This project was created during Meta's Front-End Development Course. This website was the final project or the 8th course which is the Front-End Capstone Development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website showcases a lemon-themed website with a simple and clean design. This was created with React components to show my understanding of utilizing React for creating a powerful and modern website.
+
+Tech Stacks Used:
+- React + Vite | JavaScript
+- Vanilla CSS
+- React Redux
+
+Features:
+- Login & Register interactivity
+- Reservations for booking a table
+- Order Online
+- Services
+- About Little Lemon
+- Testimonials
+- Social Media Links
+
+About the Developer:
+- [Personal Portfolio](https://giomjds-portfolio.vercel.app)
