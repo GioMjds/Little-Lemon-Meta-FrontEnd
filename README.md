@@ -12,13 +12,9 @@ Tech Stacks Used:
 - React Redux
 
 Features:
-- Login & Register interactivity
+- Login & Register interactivity w/out Back-End
 - Reservations for booking a table
-- Order Online
 - Services
 - About Little Lemon
 - Testimonials
 - Social Media Links
-
-About the Developer:
-- [Personal Portfolio](https://giomjds-portfolio.vercel.app)
