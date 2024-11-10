@@ -1,11 +1,13 @@
 import '../styles/homepage.css';
-import Header from '../components/Header';
-import Testimonials from '../components/Testimonials';
+import Hero from '../components/Hero';
+import Testimonials from '../sections/Testimonials';
+import SpecialOffer from '../sections/SpecialOffer';
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+      <Hero />
+      <SpecialOffer />
       <Testimonials />
     </>
   )

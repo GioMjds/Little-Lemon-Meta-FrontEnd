@@ -59,8 +59,8 @@
     }
 
     &.active {
-        color: hsl(50, 91%, 52%);
-        border-bottom: 4px solid hsl(50, 91%, 52%);
+        color: #000;
+        background-color: hsl(50, 91%, 52%);
     }
 }
 
@@ -100,6 +100,12 @@
         &:hover {
             background-color: hsl(50, 91%, 90%);
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-container {
+        padding: 0 30px;
     }
 }
 

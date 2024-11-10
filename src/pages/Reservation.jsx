@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import '../styles/booking-page.css';
+import '../styles/reservation.css';
 import { useNavigate } from 'react-router-dom';
 import { addReservation } from '../actions/bookingActions';
 import { useDispatch } from 'react-redux';
 
-const BookingPage = () => {
+const Reservation = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
@@ -93,4 +93,4 @@ const BookingPage = () => {
   )
 }
 
-export default BookingPage
+export default Reservation

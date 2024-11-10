@@ -3,9 +3,9 @@
     justify-content: space-between;
     align-items: center;
     height: 90vh;
-    margin: auto 4rem;
+    margin: 2rem 3rem;
     padding: 1rem;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 96%);
     border-radius: 10px;
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
 }
@@ -42,4 +42,8 @@
         width: 50%;
         height: auto;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    
 }

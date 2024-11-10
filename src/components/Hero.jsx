@@ -1,8 +1,8 @@
-import '../styles/header.css';
+import '../styles/hero.css';
 import { Link } from 'react-router-dom';
-import bannerImg from '../assets/restaurant-food.jpg';
+import bannerImg from '../assets/little-lemon/Asset20@4x.png';
 
-const Header = () => {
+const Hero = () => {
   return (
     <header className="header">
         <section>
@@ -10,7 +10,7 @@ const Header = () => {
                 <h2>Welcome to Little Lemon</h2>
                 <h3>Manila, Philippines</h3>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
-                <Link to="/menu" className="menu-link">View Menu</Link>
+                <Link to="/reservations" className="reservation-link">Make a Reservation</Link>
             </div>
 
             <div className="banner-image">
@@ -21,4 +21,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Hero

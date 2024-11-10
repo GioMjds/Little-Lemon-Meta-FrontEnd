@@ -4,8 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
-import Reservation from "./pages/BookingPage";
-import Order from "./pages/Order";
+import Reservation from "./pages/Reservation";
 import Login from "./pages/Login";
 import Confirmation from "./pages/Confirmation";
 import Menu from "./pages/Menu";
@@ -30,7 +29,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservations" element={isLoggedIn ? <Reservation /> : <Navigate to="/login" /> } />
-          <Route path="/order" element={isLoggedIn ? <Order /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/confirmation" element={<Confirmation />} />

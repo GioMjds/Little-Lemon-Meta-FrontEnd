@@ -26,6 +26,13 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: 2.5rem;
+    color: hsl(50, 91%, 52%);
+    margin: 1rem 0;
+    text-align: center;
+}
+
 h2 {
     color: hsl(50, 91%, 52%);
     font-size: 40px;
@@ -33,11 +40,13 @@ h2 {
 
 h3 {
     font-size: 1.6rem;
+    color: hsl(0, 0%, 25%);
     margin-bottom: 1rem;
 }
 
 p {
     font-size: 1rem;
+    color: hsl(0, 0%, 25%);
     margin-bottom: 0.6rem;
 }
 
@@ -56,5 +65,73 @@ button {
 
     &:hover {
         background-color: hsl(50, 91%, 42%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    button {
+        font-size: 0.7rem;
+        padding: 0.7rem 1rem;
     }
 }
