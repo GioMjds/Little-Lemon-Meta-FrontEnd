@@ -1,7 +1,13 @@
 import '../styles/about.css';
 import Logo from '../assets/little-lemon/Asset20@4x.png';
+import { useEffect } from 'react';
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About | Little Lemon";
+  })
+
   return (
     <>
       <div className='about-container'>

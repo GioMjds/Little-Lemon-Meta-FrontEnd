@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/login.css';
 
@@ -18,6 +18,10 @@ const Login = ({ setIsLoggedIn }) => {
   };
 
   const handleRegisterRedirect = () => navigate('/register');
+
+  useEffect(() => {
+    document.title = "Login | Little Lemon";
+  })
 
   return (
     <div className="login-container">

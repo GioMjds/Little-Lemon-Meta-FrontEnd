@@ -1,5 +1,5 @@
 import '../styles/menu.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { dishesData } from '../components/MenuData'
 
 const Menu = () => {
@@ -9,6 +9,10 @@ const Menu = () => {
     const updatedCategory = dishesData.filter(item => item.category === categoryItem);
     setSelectedCategory(updatedCategory);
   };
+
+  useEffect(() => {
+    document.title = "Menu | Little Lemon";
+  }, [])
 
   return (
     <div className='menu-container'>

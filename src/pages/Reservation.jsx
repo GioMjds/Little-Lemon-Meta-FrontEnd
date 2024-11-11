@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/reservation.css';
 import { useNavigate } from 'react-router-dom';
 import { addReservation } from '../actions/bookingActions';
@@ -36,6 +36,10 @@ const Reservation = () => {
     dispatch(addReservation(reservationDetails));
     navigate('/confirmation');
   }
+
+  useEffect(() => {
+    document.title = "Reserve a Table | Little Lemon"
+  }, [])
 
   return (
       <div className="booking-page-container">

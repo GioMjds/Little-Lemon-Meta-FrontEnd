@@ -11,7 +11,7 @@ const Footer = ({ toggleLogo }) => {
 
     const handleClick = () => {
         setLogo(!logo);
-        setText(text === 'uwu? >-<' ? 'more uwu?' : 'uwu?');
+        setText(logo ? 'more uwu?' : 'uwu? >-<');
         toggleLogo();
     }
     return (
@@ -42,7 +42,10 @@ const Footer = ({ toggleLogo }) => {
                     <h3>Contact Us</h3>
                     <p>Address: 123 Main St, City, State  12345</p>
                     <p>Phone: (123) 456-7890</p>
-                    <p>Email: info@littlelemon.com</p>
+                    <p>Email: info@littlelemon.com</p><br />
+                    <h3>Opening Hours</h3>
+                    <p>Weekdays: 11am - 10pm</p>
+                    <p>Weekends: 11am - 11pm</p>
                 </div>
                 <div className="footer-social">
                     <h3>Connect with us</h3>
